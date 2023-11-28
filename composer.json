@@ -33,7 +33,7 @@
             "title": "Sign in with Clerk",
             "category": "feature",
             "icon": {
-                "name": "fab fa-user",
+                "name": "fa fa-users",
                 "backgroundColor": "#EBF1FD",
                 "color": "#3a98d0"
             }
