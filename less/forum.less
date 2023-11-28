@@ -7,12 +7,24 @@
 
   border: var(--border, none) !important;
 
+  .icon:before {
+    content: "\f2f6";
+  }
+  
   .icon {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     color: #2563eb ;
     // Clerk brand logo
-    content: "\f2c2";
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
   }
 }
