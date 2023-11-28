@@ -20,22 +20,22 @@ class SlackProvider extends AbstractProvider
 {
     public function getBaseAuthorizationUrl()
     {
-        return 'https://slack.com/openid/connect/authorize';
+        return 'https://clerk.umeh.top/oauth/authorize';
     }
 
     public function getBaseAccessTokenUrl(array $params)
     {
-        return 'https://slack.com/api/openid.connect.token';
+        return 'https://clerk.umeh.top/oauth/token';
     }
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://slack.com/api/openid.connect.userInfo';
+        return 'https://clerk.umeh.top/oauth/userinfo';
     }
 
     protected function getDefaultScopes()
     {
-        return [];
+        return ['email', 'profile'];
     }
 
     protected function checkResponse(ResponseInterface $response, $data)
