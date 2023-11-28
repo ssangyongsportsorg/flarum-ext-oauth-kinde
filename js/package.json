@@ -1,5 +1,5 @@
 {
-  "name": "@blomstra/oauth-slack",
+  "name": "@umhelper/oauth-clerk",
   "version": "0.0.0",
   "private": true,
   "prettier": "@flarum/prettier-config",

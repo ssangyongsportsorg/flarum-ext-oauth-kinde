@@ -1,30 +1,30 @@
 <?php
 
 /*
- * This file is part of blomstra/oauth-slack.
+ * This file is part of umhelper/oauth-clerk.
  *
- * Copyright (c) 2022 Team Blomstra.
+ * Copyright (c) 2023 UMHelper.
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace Blomstra\OAuthSlack\Providers;
+namespace UMHelper\OAuthClerk\Providers;
 
 use Flarum\Forum\Auth\Registration;
 use FoF\OAuth\Provider;
 use League\OAuth2\Client\Provider\AbstractProvider;
 
-class Slack extends Provider
+class Clerk extends Provider
 {
     /**
-     * @var SlackProvider
+     * @var ClerkProvider
      */
     protected $provider;
 
     public function name(): string
     {
-        return 'slack';
+        return 'clerk';
     }
 
     public function link(): string
@@ -42,7 +42,7 @@ class Slack extends Provider
 
     public function provider(string $redirectUri): AbstractProvider
     {
-        return $this->provider = new SlackProvider([
+        return $this->provider = new ClerkProvider([
             'clientId'     => $this->getSetting('client_id'),
             'clientSecret' => $this->getSetting('client_secret'),
             'redirectUri'  => $redirectUri,

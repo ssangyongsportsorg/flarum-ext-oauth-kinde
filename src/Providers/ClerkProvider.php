@@ -1,22 +1,22 @@
 <?php
 
 /*
- * This file is part of blomstra/oauth-slack.
+ * This file is part of umhelper/oauth-clerk.
  *
- * Copyright (c) 2022 Team Blomstra.
+ * Copyright (c) 2023 UMHelper.
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace Blomstra\OAuthSlack\Providers;
+namespace UMHelper\OAuthClerk\Providers;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use Psr\Http\Message\ResponseInterface;
 
-class SlackProvider extends AbstractProvider
+class ClerkProvider extends AbstractProvider
 {
     public function getBaseAuthorizationUrl()
     {
@@ -47,7 +47,7 @@ class SlackProvider extends AbstractProvider
 
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new SlackResourceOwner($response);
+        return new ClerkResourceOwner($response);
     }
 
     protected function prepareAccessTokenResponse(array $result)
