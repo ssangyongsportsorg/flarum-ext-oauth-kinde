@@ -29,7 +29,7 @@ class Slack extends Provider
 
     public function link(): string
     {
-        return 'https://api.slack.com/authentication/sign-in-with-slack';
+        return 'https://clerk.com/docs/advanced-usage/clerk-idp';
     }
 
     public function fields(): array
@@ -51,7 +51,7 @@ class Slack extends Provider
 
     public function options(): array
     {
-        return ['scope' => ['openid', 'email', 'profile']];
+        return ['scope' => ['email', 'profile']];
     }
 
     public function suggestions(Registration $registration, $user, string $token)

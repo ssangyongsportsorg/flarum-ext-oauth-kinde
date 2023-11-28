@@ -1,6 +1,6 @@
 {
     "name": "blomstra/oauth-slack",
-    "description": "Sign in with Slack",
+    "description": "Sign in with Clerk",
     "keywords": [
         "flarum", "slack", "oauth", "fof", "sso"
     ],
@@ -30,10 +30,10 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Sign in with Slack",
+            "title": "Sign in with Clerk",
             "category": "feature",
             "icon": {
-                "name": "fab fa-slack",
+                "name": "fab fa-sign-in-alt",
                 "backgroundColor": "#EBF1FD",
                 "color": "#3a98d0"
             }

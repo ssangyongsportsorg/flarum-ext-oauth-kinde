@@ -35,7 +35,7 @@ class SlackProvider extends AbstractProvider
 
     protected function getDefaultScopes()
     {
-        return ['email', 'profile'];
+        return [];
     }
 
     protected function checkResponse(ResponseInterface $response, $data)
