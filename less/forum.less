@@ -1,32 +1,18 @@
 .LogInButton--clerk {
-  // https://api.clerk.com/authentication/sign-in-with-clerk#button_themes
-
-  & when (@config-dark-mode = false) {
-    --button-bg: #fff;
-    --button-color: #000;
-    --border: solid 2px #ddd;
-  }
-
-  & when (@config-dark-mode = true) {
-    --button-bg: #4a154b;
-    --button-color: #fff;
-    --border: none;
-  }
+  --button-bg: #eee;
+  --button-color: #2563eb ;
+  --border: none;
 
   --button-bg-hover: var(--button-bg);
 
   border: var(--border, none) !important;
 
   .icon {
-    &::before {
-      opacity: 0;
-    }
-
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-
+    color: #2563eb ;
     // Clerk brand logo
-    background-image: url("data:image/svg+xml,%3Csvg width='122.8' height='122.8' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E.st0%7Bfill:%23e01e5a%7D.st1%7Bfill:%2336c5f0%7D.st2%7Bfill:%232eb67d%7D.st3%7Bfill:%23ecb22e%7D%3C/style%3E%3Cpath class='st0' d='M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z'/%3E%3C/svg%3E");
+    content: "\f2c2";
   }
 }
