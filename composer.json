@@ -33,7 +33,7 @@
             "title": "Sign in with Clerk",
             "category": "feature",
             "icon": {
-                "name": "fa fa-users",
+                "name": "fa fa-sign-in-alt",
                 "backgroundColor": "#EBF1FD",
                 "color": "#3a98d0"
             }
