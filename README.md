@@ -24,6 +24,8 @@ Once enabled, this extension will add a `Clerk` option to the settings page of `
 
 Follow the [Clerk documentation](https://api.clerk.com/authentication/sign-in-with-clerk)
 
+You can use Postman to set up an OAuth application by sending the requests following the documentation.
+
 It is **imperitive** that you grant the following scopes to your new application at Clerk:
 - `email`
 - `profile`
@@ -38,4 +40,4 @@ Enjoy logging in with your Clerk credentials!
 
 - [Packagist](https://packagist.org/packages/umhelper/oauth-clerk)
 - [GitHub](https://github.com/umhelper/oauth-clerk)
-- [Discuss](https://discuss.flarum.org/d/31039)
+- [Discuss](https://discuss.flarum.org/d/33713-sign-in-with-clerk-oauth)

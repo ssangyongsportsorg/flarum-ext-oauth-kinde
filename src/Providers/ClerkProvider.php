@@ -18,19 +18,25 @@ use Psr\Http\Message\ResponseInterface;
 
 class ClerkProvider extends AbstractProvider
 {
+    protected $oauthDomain;
+    
+    public function getOauthDomain()
+    {
+        return $this->oauthDomain;
+    }
     public function getBaseAuthorizationUrl()
     {
-        return 'https://clerk.umeh.top/oauth/authorize';
+        return 'https://' . $this->getOauthDomain() . '/oauth/authorize';
     }
 
     public function getBaseAccessTokenUrl(array $params)
     {
-        return 'https://clerk.umeh.top/oauth/token';
+        return 'https://' . $this->getOauthDomain() . '/oauth/token';
     }
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://clerk.umeh.top/oauth/userinfo';
+        return 'https://' . $this->getOauthDomain() . '/oauth/userinfo';
     }
 
     protected function getDefaultScopes()

@@ -29,7 +29,7 @@ class Clerk extends Provider
 
     public function link(): string
     {
-        return 'https://clerk.com/docs/advanced-usage/clerk-idp';
+        return 'https://api.clerk.com/authentication/sign-in-with-clerk)';
     }
 
     public function fields(): array
@@ -37,6 +37,7 @@ class Clerk extends Provider
         return [
             'client_id'     => 'required',
             'client_secret' => 'required',
+            'oauth_domain' => 'required',
         ];
     }
 
@@ -45,6 +46,7 @@ class Clerk extends Provider
         return $this->provider = new ClerkProvider([
             'clientId'     => $this->getSetting('client_id'),
             'clientSecret' => $this->getSetting('client_secret'),
+            'oauthDomain' => $this->getSetting('oauth_domain'),
             'redirectUri'  => $redirectUri,
         ]);
     }
