@@ -39,5 +39,5 @@ Enjoy logging in with your Clerk credentials!
 ## Links
 
 - [Packagist](https://packagist.org/packages/umhelper/oauth-clerk)
-- [GitHub](https://github.com/umhelper/oauth-clerk)
+- [GitHub](https://github.com/UMHelper/flarum-ext-oauth-clerk/)
 - [Discuss](https://discuss.flarum.org/d/33713-sign-in-with-clerk-oauth)
