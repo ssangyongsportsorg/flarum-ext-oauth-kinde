@@ -1,5 +1,5 @@
 {
-    "name": "umeh/oauth-clerk",
+    "name": "umhelper/oauth-clerk",
     "description": "Sign in with Clerk",
     "keywords": [
         "flarum", "clerk", "oauth", "fof", "sso"
