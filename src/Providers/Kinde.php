@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace UMHelper\OAuthClerk\Providers;
+namespace Ssangyongsportsorg\OAuthClerk\Providers;
 
 use Flarum\Forum\Auth\Registration;
 use FoF\OAuth\Provider;
@@ -24,7 +24,7 @@ class Clerk extends Provider
 
     public function name(): string
     {
-        return 'clerk';
+        return 'kinde';
     }
 
     public function link(): string
