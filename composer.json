@@ -1,5 +1,5 @@
 {
-    "name": "Ssangyongsportsorg/oauth-clerk",
+    "name": "ssangyongsportsorg/oauth-clerk",
     "description": "Sign in with Clerk",
     "keywords": [
         "flarum", "clerk", "oauth", "fof", "sso"
