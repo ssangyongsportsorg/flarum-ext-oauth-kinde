@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace UMHelper\OAuthClerk\Providers;
+namespace Ssangyongsportsorg\OAuthClerk\Providers;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
@@ -26,17 +26,17 @@ class ClerkProvider extends AbstractProvider
     }
     public function getBaseAuthorizationUrl()
     {
-        return 'https://' . $this->getOauthDomain() . '/oauth/authorize';
+        return 'https://' . $this->getOauthDomain() . '/oauth2/auth';
     }
 
     public function getBaseAccessTokenUrl(array $params)
     {
-        return 'https://' . $this->getOauthDomain() . '/oauth/token';
+        return 'https://' . $this->getOauthDomain() . '/oauth2/token';
     }
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://' . $this->getOauthDomain() . '/oauth/userinfo';
+        return 'https://' . $this->getOauthDomain() . '/api';
     }
 
     protected function getDefaultScopes()
