@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace UMHelper\OAuthClerk\Providers;
+namespace Ssangyongsportsorg\OAuthClerk\Providers;
 
 use Illuminate\Support\Arr;
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
