@@ -1,5 +1,5 @@
 {
-    "name": "umhelper/oauth-clerk",
+    "name": "Ssangyongsportsorg/oauth-clerk",
     "description": "Sign in with Clerk",
     "keywords": [
         "flarum", "clerk", "oauth", "fof", "sso"
@@ -12,8 +12,8 @@
     },
     "authors": [
         {
-            "name": "UMHelper",
-            "email": "admin@umeh.top",
+            "name": "Ssangyongsportsorg",
+            "email": "admin@Ssangyongsports.eu.org",
             "role": "Developer"
         }
     ],
